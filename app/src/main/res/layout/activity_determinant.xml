@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#467F03"
+    tools:context=".Determinant">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="367dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Choose order of the Matrix !"
+        android:textColor="#EDE0A8"
+        android:textSize="54dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/order2det"
+        android:layout_width="209dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:background="#467F03"
+        android:fontFamily="@font/architects_daughter"
+        android:onClick="OpenOrder2"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/order3det"
+        android:layout_width="209dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="#467F03"
+        android:fontFamily="@font/architects_daughter"
+        android:onClick="OpenOrder3"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order2det"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/order4det"
+        android:layout_width="209dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="#467F03"
+        android:fontFamily="@font/architects_daughter"
+        android:onClick="OpenOrder4"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order3det"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/order5det"
+        android:layout_width="209dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="#467F03"
+        android:fontFamily="@font/architects_daughter"
+        android:onClick="OpenOrder5"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order4det"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="86dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center_horizontal"
+        android:text="Order of the Matrix "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="98dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:text="Number   of   Rows"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="98dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center_horizontal"
+        android:text="Number of Columns"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Two"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/order2det"
+        app:layout_constraintEnd_toEndOf="@+id/order2det"
+        app:layout_constraintStart_toStartOf="@+id/order2det"
+        app:layout_constraintTop_toTopOf="@+id/order2det"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Three"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/order3det"
+        app:layout_constraintEnd_toEndOf="@+id/order3det"
+        app:layout_constraintStart_toStartOf="@+id/order3det"
+        app:layout_constraintTop_toTopOf="@+id/order3det"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textVie11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Four"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/order4det"
+        app:layout_constraintEnd_toEndOf="@+id/order4det"
+        app:layout_constraintStart_toStartOf="@+id/order4det"
+        app:layout_constraintTop_toTopOf="@+id/order4det"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Five"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/order5det"
+        app:layout_constraintEnd_toEndOf="@+id/order5det"
+        app:layout_constraintStart_toStartOf="@+id/order5det"
+        app:layout_constraintTop_toTopOf="@+id/order5det"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="33dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="88dp"
+        android:gravity="center_horizontal"
+        android:text="="
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="33dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="88dp"
+        android:gravity="center_horizontal"
+        android:text="="
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView11" />
+</androidx.constraintlayout.widget.ConstraintLayout>

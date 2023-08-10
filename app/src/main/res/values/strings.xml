@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Matrix  Calculator</string>
+    <string name="mainbg">mainbg</string>
+    <string name="detordbg">detordbg</string>
+</resources>
